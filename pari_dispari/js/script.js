@@ -10,6 +10,11 @@ console.log(randomNumber);
 // somma i due numeri
 var somma = userNumber + randomNumber;
 console.log(somma);
-
-
 // vincitore
+if (somma % 2 == 0 && pariDispari == "pari") {
+  console.log("hai vinto");
+} else if (somma % 2 != 0 && pariDispari == "dispari") {
+  console.log("hai vinto");
+} else {
+  console.log("hai perso");
+}
