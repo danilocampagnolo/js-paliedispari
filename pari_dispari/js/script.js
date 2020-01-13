@@ -10,11 +10,22 @@ console.log(randomNumber);
 // somma i due numeri
 var somma = userNumber + randomNumber;
 console.log(somma);
-// vincitore
-if (somma % 2 == 0 && pariDispari == "pari") {
-  console.log("hai vinto");
-} else if (somma % 2 != 0 && pariDispari == "dispari") {
+
+if (pari_dispari(somma) == true) {
   console.log("hai vinto");
 } else {
   console.log("hai perso");
+}
+
+
+
+// ====================== FUNZIONE
+function pari_dispari(somma) {
+  if (somma % 2 == 0 && pariDispari == "pari") {
+    return true;
+  } else if (somma % 2 != 0 && pariDispari == "dispari") {
+    return true;
+  } else {
+    return false;
+  }
 }
