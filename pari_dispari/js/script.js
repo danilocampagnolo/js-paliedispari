@@ -11,9 +11,13 @@ console.log(randomNumber);
 var somma = userNumber + randomNumber;
 console.log(somma);
 
-if (pari_dispari(somma) == true) {
+
+if (pari_dispari(somma) == true && pariDispari == "pari") {
   console.log("hai vinto");
-} else {
+} else if (pari_dispari(somma) == false && pariDispari == "dispari") {
+  console.log("hai vinto");
+}
+else {
   console.log("hai perso");
 }
 
@@ -21,9 +25,7 @@ if (pari_dispari(somma) == true) {
 
 // ====================== FUNZIONE
 function pari_dispari(somma) {
-  if (somma % 2 == 0 && pariDispari == "pari") {
-    return true;
-  } else if (somma % 2 != 0 && pariDispari == "dispari") {
+  if (somma % 2 == 0) {
     return true;
   } else {
     return false;
