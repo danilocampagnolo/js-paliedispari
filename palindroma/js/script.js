@@ -1,14 +1,12 @@
 var parola = prompt("inserisci una parola");
 var arrayParola = [];
 var arrayParolaReverse = [];
-var messaggio;
 
 if (isPalindrome(parola) == true) {
-  messaggio = "palindroma";
+  console.log("palindroma");
 } else {
-  messaggio = "non è palindorma";
+  console.log("non è palindorma");
 }
-console.log(messaggio);
 
 
 // =================== FUNZIONE
